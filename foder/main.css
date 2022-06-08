@@ -1,5 +1,4 @@
- 
- *{
+*{
      padding: 0;
      margin: 0;
      box-sizing: border-box;
@@ -9,6 +8,7 @@
     margin-right: -8px;
 
 }
+
 .col{
 
     float: left;
@@ -16,7 +16,10 @@
     padding-right: 8px;
 }
 .col-third{
-    width: 33%;
+    width: 33.3333%;
+}
+.member-item{
+    width: 33.3333%;
 }
 .col-half{
     width: 50%;
@@ -40,6 +43,7 @@ html{
     left: 0;
     right: 0;
     z-index: 1;
+
 }
 #nav{
     display: inline-block;
@@ -94,14 +98,31 @@ html{
     
     padding: 0 24px;
 }
+#header .mobie-menu{
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: none;
+}
+
+#header .mobie-menu,
 #header .search-btn{
     float:right;
     line-height: 46px;
     padding: 0 22px;
 
 }
+
 #header .search-btn:hover{
     background-color: #f44336;
+}
+#header .mobie-menu:hover{
+    background-color: #ccc;
+}
+
+#header .menu-icon{
+    color: #fff;
+    font-size: 20px;
 }
 
 #header .search-icon{
@@ -140,9 +161,11 @@ html{
 }
 #content .content-section{
     width: 650px;
+    max-width: 100%;
     margin-left: auto;
     margin-right: auto;
     padding: 64px 0;
+    padding-right: 16px;
 }
 #content .section-heading{
     font-size: 30px;
@@ -161,7 +184,7 @@ html{
 }
 #content .about-text{
     text-align: justify;
-    margin: 15px 0;
+    margin: 15px 5px;
     line-height: 1.4;
 }
 /* member-list*/
@@ -191,6 +214,8 @@ html{
 .ticket-list{
     margin-top: 40px;
     background-color: white;
+    margin-left: 14px;
+    
 }
 .ticket-list li{
     padding: 12px 14px;
@@ -201,7 +226,7 @@ html{
     padding: 0 8px;
     margin-left: 16px;
     background-color: #f44336;
-    color: white;
+    coloticket-listr: white;
     
 }
 .quanlity{
@@ -216,12 +241,14 @@ html{
   
    
     margin-top: 32px; 
+    margin-left: 5px;
     
 }
 
 .place-img{
     width: 100%;
     display: block;
+    
 }
 .place-img:hover{
     opacity: 0.6;
@@ -340,13 +367,13 @@ html{
     font-size: 15px;
 }
 .form-control {
-    width: 90%;
+    width: 100%;
     margin-top: 12px;
     padding: 10px;
     border: 1px solid #ccc
 }
 .contact-input{
-    margin-right: 10px;
+
 }
 .contact-send{
     float: right;
@@ -355,7 +382,8 @@ html{
     background-color: #000;
     color: #fff;
     cursor: pointer;
-    margin-right: 30px;
+    
+    margin-top: 10px;
 }
 .contact-send:hover{
     background-color: #ccc;
