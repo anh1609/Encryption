@@ -1,0 +1,147 @@
+* {
+    font-family: 'Times New Roman', Times, serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+}
+
+
+/*  */
+
+
+/* .text2hex {
+    height: 500px;
+}
+
+.cetr {
+    margin-top: 15%;
+    text-align: center;
+} */
+
+
+/*  */
+
+.container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.left {
+    width: 70%;
+    height: 100%;
+    background-color: rgb(128, 146, 116);
+    display: block;
+    position: relative;
+}
+
+.logo {
+    text-align: center;
+    padding-top: 15%;
+    font-size: 40px;
+}
+
+.code {
+    position: absolute;
+    top: 35%;
+    left: 20%;
+    margin: auto;
+    display: block;
+}
+
+.answer {
+    padding-left: 8%;
+    font-size: 120%;
+    padding-top: 30%;
+    font-size: 20px;
+}
+
+input {
+    height: 30px;
+    width: 70%;
+    margin-top: 20px;
+    border: 1px solid #fff;
+    font-size: inherit;
+    font-family: inherit;
+    outline: none;
+    background-color: none;
+    padding: 5px;
+    border-radius: 0.3rem;
+}
+
+.button {
+    margin-top: 5px;
+    justify-content: space-between;
+    width: 70%;
+    display: flex;
+    text-align: center;
+}
+
+#encrypt {
+    margin-right: 50px;
+}
+
+#encrypt:hover {
+    background-color: rgb(127, 255, 155);
+    cursor: pointer;
+    border: none;
+    color: rgb(85, 85, 85);
+}
+
+#decrypt:hover {
+    background-color: rgb(127, 255, 155);
+    cursor: pointer;
+    border: none;
+    color: rgb(85, 85, 85);
+}
+
+@media only screen and (max-width: 768px) {
+    .left {
+        width: 100%;
+    }
+    .right {}
+    .container {
+        width: 100%;
+        display: block;
+    }
+}
+
+.right {
+    position: relative;
+    width: 70%;
+    height: 100%;
+    justify-content: center;
+}
+
+.right-container {
+    margin-top: 15%;
+    margin-left: 20%;
+}
+
+.show {
+    display: flex;
+    margin-bottom: 5px;
+}
+
+.title {
+    display: none;
+    margin-right: 50px;
+    width: 15%;
+}
+
+
+/* img {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+} */

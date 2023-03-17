@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+    <script src="tst.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <title>DEScrypt</title>
+</head>
+
+<body>
+    <!-- <div class="text2hex" style="background-color: aquamarine;">
+        <div style="text-align: center;padding: 20px;">hướng dẫn dùng
+
+        </div>
+        <form class="cetr" action="" method="get">
+
+            <input id="name" name="name" placeholder="nhập văn bản bạn muốn chuyên" type="text" value=""><br>
+
+
+            <input name="text" type="password" value=""><br>
+
+            <div style="width: 100%;">
+                <input style="width: 20%;margin-right: 20%;" type="button" name="submit" value="chuyển đổi" />
+                <input style="width: 20%;" type="button" name="submit" value="chuyển đổi" />
+            </div>
+
+        </form>
+    </div> -->
+    <div class="container">
+        <div class="left">
+            <div class="logo">DEScrypt</div>
+            <!--  -->
+            <div class="code">
+
+                <form action="">
+                    <h4>nhập mã và nhập key</h4>
+                    <input type="text" placeholder="text (hex 64 bit)" id="plaintext">
+                    <input type="text" placeholder="key (key 64 bit)" id="key" value="">
+                    <div class="button">
+                        <input type="button" value="Encrypt" id="encrypt" onclick="runEn()">
+                        <input type="button" value="Decrypt" id="decrypt" onclick="runDe()">
+                    </div>
+                </form>
+                <div class="answer" id="answer"></div>
+            </div>
+            <!--  -->
+
+        </div>
+        <div class="right">
+            <!-- <img src="des.gif" alt="" id="img"> -->
+            <div class="right-container">
+                <div class="show">
+                    <p class="title">Input:</p>
+                    <div id="input"></div>
+                </div>
+                <div class="show">
+                    <p class="title">After IP:</p>
+                    <div id="ip-right"></div>
+                </div>
+                <div class="show">
+                    <p class="title">After Splitting:</p>
+                    <div id="split"></div>
+                </div>
+                <div class="show">
+                    <p class="title">Round 1:</p>
+                    <div id="round-1"></div>
+                </div>
+                <div class="show">
+                    <p class="title">Round 2:</p>
+                    <div id="round-2"></div>
+                </div>
+                <div class="show">
+                    <p class="title">Round 3:</p>
+                    <div id="round-3"></div>
+                </div>
+                <div class="show">
+                    <p class="title">Round 4:</p>
+                    <div id="round-4"></div>
+                </div>
+                <div class="show">
+                    <p class="title">Round 5:</p>
+                    <div id="round-5"></div>
+                </div>
+                <div class="show">
+                    <p class="title">Round 6:</p>
+                    <div id="round-6"></div>
+                </div>
+                <div class="show">
+                    <p class="title">Round 7:</p>
+                    <div id="round-7"></div>
+                </div>
+                <div class="show">
+                    <p class="title">Round 8:</p>
+                    <div id="round-8"></div>
+                </div>
+                <div class="show">
+                    <p class="title">Round 9:</p>
+                    <div id="round-9"></div>
+                </div>
+                <div class="show">
+                    <p class="title">Round 10:</p>
+                    <div id="round-10"></div>
+                </div>
+                <div class="show">
+                    <p class="title">Round 11:</p>
+                    <div id="round-11"></div>
+                </div>
+                <div class="show">
+                    <p class="title">Round 12:</p>
+                    <div id="round-12"></div>
+                </div>
+                <div class="show">
+                    <p class="title">Round 13:</p>
+                    <div id="round-13"></div>
+                </div>
+                <div class="show">
+                    <p class="title">Round 14:</p>
+                    <div id="round-14"></div>
+                </div>
+                <div class="show">
+                    <p class="title">Round 15:</p>
+                    <div id="round-15"></div>
+                </div>
+                <div class="show">
+                    <p class="title">Round 16:</p>
+                    <div id="round-16"></div>
+                </div>
+                <div class="show">
+                    <p class="title">Result: </p>
+                    <div id="result"></div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="test.js">
+    </script>
+</body>
+
+</html>
